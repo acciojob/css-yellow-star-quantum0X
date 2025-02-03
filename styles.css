@@ -1,1 +1,20 @@
-/*  your css code here. If applicable */
+.star {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 80px solid yellow;
+            position: relative;
+        }
+
+        .star::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: -50px;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 80px solid yellow;
+        }
